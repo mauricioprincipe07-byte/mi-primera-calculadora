@@ -9,15 +9,23 @@ int main() {
     printf("dame el segundo numero: ");
     scanf("%f", &num2);
     
+    
     suma = num1 + num2;
     resta = num1 - num2;
     multi = num1 * num2;
-    divi = num1 / num2;
     
     printf("la suma es : %f\n", suma);
     printf("resta es : %f\n", resta);
     printf("multi es : %f\n", multi);
-    printf("divi es : %f\n", divi);
+
+    // 🧠 EL CEREBRO DE LA CALCULADORA:
+    if (num2 == 0) {
+        printf("error: no se puede dividir entre cero\n");
+    }
+    else {
+        divi = num1 / num2;             
+        printf("divi es : %f\n", divi); 
+    }
     
     return 0;
 }
